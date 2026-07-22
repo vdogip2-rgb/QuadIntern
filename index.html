@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Vaishvik Dogiparthi</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Fraunces:opsz,wght@9..144,500;9..144,600&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --ink:#1d1d1b;
+    --muted:#6b6b66;
+    --line:#e4e1d8;
+    --bg:#fbfaf7;
+    --accent:#3c5a48;
+    --display:'Fraunces', serif;
+    --body:'Inter', sans-serif;
+  }
+  *{box-sizing:border-box;}
+  body{
+    margin:0;
+    background:var(--bg);
+    color:var(--ink);
+    font-family:var(--body);
+    line-height:1.6;
+    font-size:16px;
+    -webkit-font-smoothing:antialiased;
+  }
+  .wrap{
+    max-width:760px;
+    margin:0 auto;
+    padding:0 28px;
+  }
+  section{padding:64px 0;}
+  section + section{border-top:1px solid var(--line);}
+  @media(max-width:600px){ section{padding:44px 0;} }
+
+  header.hero{padding:88px 0 60px;}
+  header.hero .eyebrow{
+    font-size:13px; letter-spacing:0.08em; text-transform:uppercase;
+    color:var(--accent); font-weight:600; margin-bottom:16px;
+  }
+  h1{
+    font-family:var(--display); font-weight:600;
+    font-size:clamp(2.1rem, 6vw, 3.1rem);
+    margin:0 0 18px; letter-spacing:-0.01em;
+  }
+  .hero p.tagline{
+    font-size:1.1rem; color:var(--muted); max-width:560px; margin:0 0 28px;
+  }
+  .hero-links{
+    display:flex; flex-wrap:wrap; gap:20px; font-size:14.5px;
+  }
+  .hero-links a{
+    color:var(--ink); text-decoration:none; border-bottom:1px solid var(--line);
+    padding-bottom:2px;
+  }
+  .hero-links a:hover{border-color:var(--accent); color:var(--accent);}
+  .hero-links span{color:var(--muted);}
+
+  h2{
+    font-family:var(--display); font-weight:600; font-size:1.5rem;
+    margin:0 0 30px;
+  }
+
+  #summary p{ font-size:1.05rem; color:#2c2c29; max-width:640px; }
+
+  .job{ margin-bottom:38px; }
+  .job:last-child{ margin-bottom:0; }
+  .job-head{
+    display:flex; justify-content:space-between; align-items:baseline;
+    flex-wrap:wrap; gap:6px 16px; margin-bottom:6px;
+  }
+  .job-title{ font-weight:600; font-size:1.05rem; }
+  .job-period{ font-size:13px; color:var(--muted); white-space:nowrap; }
+  .job-org{ font-size:14.5px; color:var(--accent); margin-bottom:12px; font-weight:500; }
+  .job ul{ margin:0; padding-left:20px; color:#38382f; }
+  .job li{ margin-bottom:8px; font-size:0.98rem; }
+  .job li:last-child{ margin-bottom:0; }
+
+  .skill-row{ display:flex; flex-wrap:wrap; gap:10px; }
+  .skill{
+    font-size:13.5px; padding:7px 14px; border:1px solid var(--line);
+    border-radius:20px; color:#33332e; background:#fff;
+  }
+
+  .edu{ margin-bottom:26px; }
+  .edu:last-child{ margin-bottom:0; }
+  .edu-school{ font-weight:600; font-size:1.02rem; margin-bottom:2px; }
+  .edu-detail{ font-size:14.5px; color:var(--muted); }
+
+  .course-line{ font-size:14.5px; color:#38382f; margin-top:6px; }
+
+  #contact p{ color:var(--muted); margin:0 0 24px; max-width:480px; }
+  .contact-row{ display:flex; gap:16px; flex-wrap:wrap; }
+  .btn{
+    display:inline-block; font-size:14.5px; font-weight:500;
+    padding:11px 22px; border-radius:6px; text-decoration:none;
+    border:1px solid var(--ink); color:var(--ink);
+  }
+  .btn.primary{ background:var(--ink); color:#fff; }
+  .btn:hover{ opacity:0.75; }
+
+  footer{
+    text-align:center; font-size:12.5px; color:var(--muted);
+    padding:32px 0 48px;
+  }
+
+  :focus-visible{ outline:2px solid var(--accent); outline-offset:2px; }
+</style>
+</head>
+<body>
+
+<div class="wrap">
+
+  <header class="hero">
+    <div class="eyebrow">Software Engineer · Builder · 3rd Degree Black Belt</div>
+    <h1>Vaishvik Dogiparthi</h1>
+    <p class="tagline">Aspiring software engineer and Pre-Computer Science student at the University of Washington, building at the intersection of code, product, and leadership.</p>
+    <div class="hero-links">
+      <a href="mailto:dogiparthivaishvik@gmail.com">dogiparthivaishvik@gmail.com</a>
+      <a href="tel:3322579395">332-257-9395</a>
+      <span>Bothell, WA</span>
+    </div>
+  </header>
+
+  <section id="summary">
+    <h2>Summary</h2>
+    <p>Aspiring software engineer and Pre-Computer Science student at the University of Washington with hands-on experience in Python, C++, Java, and UI/UX design. Co-founded Style-AI, an AI-powered fashion platform with 5,000+ active users, applying technical and product-thinking skills in a real startup environment. Proven leader across technical and collaborative settings, with a drive to build innovative, user-centered software solutions.</p>
+  </section>
+
+  <section id="experience">
+    <h2>Professional Experience</h2>
+
+    <div class="job">
+      <div class="job-head">
+        <div class="job-title">Co-Founder &amp; Chief Officer of Operations</div>
+        <div class="job-period">2023 — Present</div>
+      </div>
+      <div class="job-org">Style-AI</div>
+      <ul>
+        <li>Co-founded an AI-fashion service that has grown to 5,000+ active users.</li>
+        <li>Managed logistics and designed the business structure; contributed to website design and AI functionality.</li>
+        <li>Designed and presented a business plan to a 300+ person audience of investors, competitors, and judges, placing 5th out of 50+ teams.</li>
+      </ul>
+    </div>
+
+    <div class="job">
+      <div class="job-head">
+        <div class="job-title">Vice-President of Conferences</div>
+        <div class="job-period">2024 — Present</div>
+      </div>
+      <div class="job-org">Model United Nations HS Club</div>
+      <ul>
+        <li>Designed 20+ extensive, high-quality debate topics for 20+ members as Secretary of Conferences in JHS MUN.</li>
+        <li>Co-founded and served as Vice-President of Conferences for the Jackson-Model United Nations Competition, hosting 25+ delegates across its first two years.</li>
+      </ul>
+    </div>
+
+    <div class="job">
+      <div class="job-head">
+        <div class="job-title">Assistant Master</div>
+        <div class="job-period">2018 — Present</div>
+      </div>
+      <div class="job-org">JK Taekwondo</div>
+      <ul>
+        <li>Instructed and mentored 20–30 students per class, from beginners to advanced belts.</li>
+        <li>Assisted the head instructor in planning weekly training sessions, demonstrations, and belt tests, contributing to a 90% student advancement rate.</li>
+        <li>Trained for 8+ years, earning a 3rd Degree Black Belt awarded by KUKKIWON.</li>
+      </ul>
+    </div>
+  </section>
+
+  <section id="skills">
+    <h2>Skills</h2>
+    <div class="skill-row">
+      <span class="skill">Python</span>
+      <span class="skill">C++</span>
+      <span class="skill">Java</span>
+      <span class="skill">UI/UX Design</span>
+      <span class="skill">CADD</span>
+      <span class="skill">GitHub</span>
+      <span class="skill">Leadership</span>
+      <span class="skill">Communication</span>
+      <span class="skill">Organization</span>
+      <span class="skill">Resilience</span>
+      <span class="skill">Accountability</span>
+      <span class="skill">Effective Mediation</span>
+    </div>
+  </section>
+
+  <section id="education">
+    <h2>Education</h2>
+
+    <div class="edu">
+      <div class="edu-school">Henry M Jackson High School</div>
+      <div class="edu-detail">Graduating Class of 2026 · 3.8 Unweighted GPA</div>
+    </div>
+    <div class="edu">
+      <div class="edu-school">Cascadia College</div>
+      <div class="edu-detail">Running Start Program</div>
+    </div>
+    <div class="edu">
+      <div class="edu-school">University of Washington</div>
+      <div class="edu-detail">Pre-Computer Science</div>
+    </div>
+
+    <div class="course-line">
+      <strong style="color:var(--ink);">Relevant coursework:</strong>
+      AP Computer Science Principles, AP Computer Science A, ITCS115 Intro to Programming, ITWEB12 Intro to Web Authoring
+    </div>
+  </section>
+
+  <section id="contact">
+    <h2>Get in touch</h2>
+    <p>Open to software engineering internships, collaborations, and conversations about product, startups, or Taekwondo.</p>
+    <div class="contact-row">
+      <a class="btn primary" href="mailto:dogiparthivaishvik@gmail.com">Email me</a>
+      <a class="btn" href="tel:3322579395">Call</a>
+    </div>
+  </section>
+
+  <footer>Vaishvik Dogiparthi — Bothell, Washington</footer>
+
+</div>
+</body>
+</html>
